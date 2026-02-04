@@ -169,7 +169,7 @@ export default function CalculadoraPage() {
                   type="number"
                   value={age}
                   onChange={(e) => setAge(e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent text-gray-700"
                   placeholder="Ej: 30"
                 />
               </div>
@@ -183,7 +183,7 @@ export default function CalculadoraPage() {
                   type="number"
                   value={weight}
                   onChange={(e) => setWeight(e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent text-gray-700"
                   placeholder="Ej: 75"
                 />
               </div>
@@ -197,7 +197,7 @@ export default function CalculadoraPage() {
                   type="number"
                   value={height}
                   onChange={(e) => setHeight(e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent text-gray-700"
                   placeholder="Ej: 175"
                 />
               </div>
@@ -210,7 +210,7 @@ export default function CalculadoraPage() {
                 <select
                   value={activityLevel}
                   onChange={(e) => setActivityLevel(e.target.value as ActivityLevel)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent text-gray-700"
                 >
                   <option value="sedentary">Sedentario (poco o nada de ejercicio)</option>
                   <option value="light">Ligero (1-3 días/semana)</option>
@@ -228,7 +228,7 @@ export default function CalculadoraPage() {
                 <select
                   value={goal}
                   onChange={(e) => setGoal(e.target.value as Goal)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent text-gray-700"
                 >
                   <option value="lose">Perder Peso</option>
                   <option value="maintain">Mantener Peso</option>
@@ -287,11 +287,11 @@ export default function CalculadoraPage() {
                   <div className="space-y-3">
                     <div className="flex justify-between items-center">
                       <span className="text-gray-600">Metabolismo Basal (BMR):</span>
-                      <span className="font-bold text-lg">{results.bmr} kcal</span>
+                      <span className="font-bold text-lg text-gray-500">{results.bmr} kcal</span>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-gray-600">Gasto Total (TDEE):</span>
-                      <span className="font-bold text-lg">{results.tdee} kcal</span>
+                      <span className="font-bold text-lg text-gray-500">{results.tdee} kcal</span>
                     </div>
                     <div className="border-t pt-3 flex justify-between items-center">
                       <span className="text-gray-800 font-medium">Meta Diaria:</span>
@@ -312,7 +312,7 @@ export default function CalculadoraPage() {
                     <div>
                       <div className="flex justify-between mb-2">
                         <span className="text-gray-700">Proteína</span>
-                        <span className="font-bold">{results.protein}g</span>
+                        <span className="font-bold text-gray-500">{results.protein}g</span>
                       </div>
                       <div className="w-full bg-gray-200 rounded-full h-3">
                         <div
@@ -324,7 +324,7 @@ export default function CalculadoraPage() {
                     <div>
                       <div className="flex justify-between mb-2">
                         <span className="text-gray-700">Carbohidratos</span>
-                        <span className="font-bold">{results.carbs}g</span>
+                        <span className="font-bold text-gray-500">{results.carbs}g</span>
                       </div>
                       <div className="w-full bg-gray-200 rounded-full h-3">
                         <div
@@ -336,7 +336,7 @@ export default function CalculadoraPage() {
                     <div>
                       <div className="flex justify-between mb-2">
                         <span className="text-gray-700">Grasas</span>
-                        <span className="font-bold">{results.fat}g</span>
+                        <span className="font-bold text-gray-500">{results.fat}g</span>
                       </div>
                       <div className="w-full bg-gray-200 rounded-full h-3">
                         <div

@@ -91,7 +91,7 @@ export default function ContactoPage() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent text-gray-500"
                     placeholder="Juan Pérez"
                   />
                 </div>
@@ -108,7 +108,7 @@ export default function ContactoPage() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent text-gray-500"
                       placeholder="juan@email.com"
                     />
                   </div>
@@ -122,7 +122,7 @@ export default function ContactoPage() {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent text-gray-500"
                       placeholder="+52 81 1234 5678"
                     />
                   </div>
@@ -137,7 +137,7 @@ export default function ContactoPage() {
                     name="service"
                     value={formData.service}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent text-gray-500"
                   >
                     <option value="personal">Entrenamiento Personal</option>
                     <option value="nutrition">Nutrición Deportiva</option>
@@ -159,7 +159,7 @@ export default function ContactoPage() {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent resize-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent resize-none text-gray-500"
                     placeholder="Quiero perder peso, ganar músculo, mejorar mi salud..."
                   />
                 </div>
@@ -193,7 +193,7 @@ export default function ContactoPage() {
                 >
                   <Phone className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-medium">Teléfono</div>
+                    <div className="font-medium text-gray-700">Teléfono</div>
                     <div className="text-gray-600 group-hover:text-accent">+52 81 1234 5678</div>
                   </div>
                 </a>
@@ -203,14 +203,14 @@ export default function ContactoPage() {
                 >
                   <Mail className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-medium">Email</div>
+                    <div className="font-medium text-gray-700">Email</div>
                     <div className="text-gray-600 group-hover:text-accent">info@fitprotrainer.com</div>
                   </div>
                 </a>
                 <div className="flex items-start space-x-3">
                   <MapPin className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-medium">Ubicación</div>
+                    <div className="font-medium text-gray-700">Ubicación</div>
                     <div className="text-gray-600">
                       San Pedro Garza García<br />
                       Monterrey, Nuevo León

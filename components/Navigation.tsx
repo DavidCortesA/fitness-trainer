@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Dumbbell } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 
 const navItems = [
   { name: 'Inicio', href: '/' },
@@ -16,6 +17,7 @@ const navItems = [
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,6 +27,8 @@ export default function Navigation() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const isLight = pathname === '/' && !scrolled;
 
   return (
     <motion.nav
@@ -45,7 +49,7 @@ export default function Navigation() {
             >
               <Dumbbell className="w-6 h-6 text-white" />
             </motion.div>
-            <span className="text-2xl font-bold text-primary">FitPro</span>
+            <span className={`text-2xl font-bold ${isLight ? 'text-white' : 'text-black'}`}>FitPro</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -54,7 +58,9 @@ export default function Navigation() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="px-4 py-2 rounded-lg text-primary hover:bg-accent hover:text-white transition-all duration-300 font-medium"
+                className={`px-4 py-2 rounded-lg hover:bg-accent hover:text-white transition-all duration-300 font-medium
+                  ${isLight ? 'text-white' : 'text-black'}`
+                }
               >
                 {item.name}
               </Link>

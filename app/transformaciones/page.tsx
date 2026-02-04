@@ -135,7 +135,7 @@ export default function TransformacionesPage() {
   const activeTransformation = transformations[activeIndex];
 
   return (
-    <div className="pt-32 pb-20">
+    <div className="pt-32 pb-20 bg-secondary">
       {/* Header */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
         <motion.div
@@ -213,7 +213,7 @@ export default function TransformacionesPage() {
             </div>
 
             {/* Testimonial */}
-            <div className="bg-secondary p-6 rounded-xl relative">
+            <div className="bg-secondary p-6 rounded-xl relative shadow-md">
               <Quote className="w-10 h-10 text-accent/20 absolute top-4 left-4" />
               <p className="text-gray-700 italic pl-8 pt-4">
                 "{activeTransformation.testimonial}"

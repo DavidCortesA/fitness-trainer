@@ -87,7 +87,7 @@ const services = [
 
 export default function ServiciosPage() {
   return (
-    <div className="pt-32 pb-20">
+    <div className="pt-32 pb-20 bg-secondary">
       {/* Header */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
         <motion.div
